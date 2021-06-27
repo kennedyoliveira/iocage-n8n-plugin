@@ -11,7 +11,7 @@ npm i -g pm2
 chmod 0755 /usr/local/bin/pm2_n8n
 
 # start the app
-su -m n8n -c 'pm2_n8n start config/ecosystem.config.js'
+su -m n8n -c 'pm2_n8n start /home/n8n/config/ecosystem.config.js'
 
 # store the config
 su -m n8n -c 'pm2_n8n save'
