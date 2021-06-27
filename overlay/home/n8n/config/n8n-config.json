@@ -1,0 +1,17 @@
+{
+  "database": "sqlite",
+  "executions": {
+    "mode": "regular"
+  },
+  "generic": {
+    "timezone": "America/New_York"
+  },
+  "host": "localhost",
+  "port": 5678,
+  "listen_address": "0.0.0.0",
+  "endpoints": {
+    "metrics": {
+      "enable": false
+    }
+  }
+}

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export PM2_HOME=/home/n8n/.pm2
+pm2 "$@"
