@@ -1,5 +1,7 @@
 {
-  "database": "sqlite",
+  "database": {
+    "type": "sqlite"
+  },
   "executions": {
     "mode": "regular"
   },
