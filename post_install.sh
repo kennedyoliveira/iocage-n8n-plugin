@@ -23,7 +23,7 @@ su -m n8n -c 'pm2_n8n kill'
 mkdir -p /usr/local/etc/rc.d
 
 # create the startup scripts
-pm2 startup -u n8n --hp
+pm2 startup -u n8n --hp /home/n8n
 
 echo "starting the service"
 service pm2_n8n start
