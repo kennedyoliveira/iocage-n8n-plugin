@@ -1,6 +1,7 @@
 #!/bin/sh
 
 echo "installing n8n"
+npm config set user root
 npm i -g n8n
 
 echo "installing pm2 globally"
