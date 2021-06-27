@@ -1,1 +1,20 @@
-TODO: Add plugin information here
+n8n installed.
+
+The default configuration uses sqlite database and it's suited for experimentation
+and small projects, if you need to scale the application replace the database
+for something more robust like postgres or mysql, check https://docs.n8n.io/reference/data/database.html
+for more information.
+
+The configuration file is in /home/n8n/config/n8n-config.json.
+
+The application uses pm2 for daemonizing it, it has a utility pm2_n8n that you
+should use instead of the regular pm2 cli for managing the service, examples:
+
+Check logs
+
+pm2_n8n logs
+
+
+Restart the application
+
+pm2_n8n restart n8n
