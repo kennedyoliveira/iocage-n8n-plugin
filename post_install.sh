@@ -1,12 +1,15 @@
 #!/bin/sh
 
+echo "installing n8n"
+npm i -g n8n
+
+echo "installing pm2 globally"
+npm i -g pm2
+
 echo "creating users"
 pw adduser n8n -c "n8n daemon" -d /home/n8n -s /sbin/nologin
 
 chown -R n8n:nogroup /home/n8n
-
-echo "installing pm2 globally"
-npm i -g pm2
 
 chmod 0755 /usr/local/bin/pm2_n8n
 
