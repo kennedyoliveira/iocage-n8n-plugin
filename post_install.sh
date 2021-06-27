@@ -10,6 +10,8 @@ npm i -g pm2
 echo "creating users"
 pw adduser n8n -c "n8n daemon" -d /home/n8n -s /sbin/nologin
 
+echo "preparing folder structure"
+mkdir -p /home/n8n/data
 chown -R n8n:nogroup /home/n8n
 
 chmod 0755 /usr/local/bin/pm2_n8n
